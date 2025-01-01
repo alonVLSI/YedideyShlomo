@@ -91,26 +91,28 @@ ul li::before {
 }
 
 .donate-btn, .donation-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px; /* Fixed width */
-    height: 50px; /* Fixed height */
+    display: inline-flex; /* Ensures text and icon stay on the same line */
+    align-items: center; 
+    justify-content: center; 
+    width: auto; /* Allow the width to adjust dynamically */
+    max-width: 100%; /* Prevents the button from being too wide on small screens */
+    height: auto; /* Allow height to adjust as well */
     margin: 20px auto;
-    padding: 10px 20px;
+    padding: 10px 15px; /* Adjusted padding for smaller screens */
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 30px; /* Consistent rounded corners */
+    border-radius: 30px;
     color: white;
-    background: #ff6f61; /* Default background color for donate-btn */
+    background: #ff6f61;
     transition: transform 0.3s ease, background 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .donate-btn:hover, .donation-button:hover {
-    background: #ff3d30; /* Hover color */
+    background: #ff3d30;
     transform: scale(1.05);
 }
 
@@ -119,11 +121,9 @@ ul li::before {
 }
 
 .donation-button img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-	margin-left: 10px;
-
+    width: 20px; /* Adjust size for better fit */
+    height: 20px;
+    margin: 0 8px; /* Reduce spacing between text and image */
 }
 
 .donation-container {
@@ -158,13 +158,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .header h1 {
-        font-size: 24px;
-    }
     .donate-btn, .donation-button {
-        width: 180px; /* Adjust size for smaller screens */
-        padding: 12px 25px;
-        font-size: 18px;
+        font-size: 14px; /* Reduce font size on smaller screens */
+        padding: 8px 12px; /* Smaller padding for compact design */
     }
 }
 
