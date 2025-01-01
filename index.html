@@ -90,7 +90,7 @@ ul li::before {
     font-size: 20px;
 }
 
-.donate-btn, .donation-button {
+.donate-btn, .donation-button,.bit-button {
     display: inline-flex; /* Use flexbox to align content */
     align-items: center; /* Vertically center content */
     justify-content: center; /* Horizontally center content */
@@ -132,7 +132,7 @@ ul li::before {
     margin: 0 8px; /* Reduce spacing between text and image */
 }
 
-.donate-btn, .donation-button {
+.donate-btn, .donation-button,.bit-button  {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,6 +162,20 @@ ul li::before {
     align-items: center; /* Center-align buttons */
     gap: 15px; /* Add spacing between buttons */
     margin-top: 20px;
+}
+.bit-button {
+    background-color: #40E0D0; /* טורקיז בהיר */
+    transition: background-color 0.3s ease;
+}
+
+.bit-button img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+.bit-button:hover {
+    background-color: #2F8F85; /* טורקיז כהה יותר */
 }
 footer {
     background: #004085;
@@ -482,6 +496,9 @@ photo-caption {
         תשלום ב-
         <img src="Paybox-Icon.png" alt="PayBox Icon">
     </a>
+	<a href="https://www.bitpay.co.il/app/me/60CB1AFB-D7A8-EB92-413C-286601E08EE4F86F" target="_blank" class="bit-button">
+        תשלום ב-
+        <img src="Bit-Icon.png" alt="Bit Icon">
     <a href="https://yedidei-shlomo.com/" class="donate-btn" target="_blank">לתרומה באמצעים אחרים</a>
 </div>
 
@@ -603,7 +620,12 @@ photo-caption {
             Pay with
             <img src="Paybox-Icon.png" alt="PayBox Icon">
         </a>
+		<a href="https://www.bitpay.co.il/app/me/60CB1AFB-D7A8-EB92-413C-286601E08EE4F86F" target="_blank" class="bit-button">
+        Pay with 
+        <img src="Bit-Icon.png" alt="Bit Icon">
+    </a>
         <a href="https://yedidei-shlomo.com/" class="donate-btn" target="_blank">Donate through other methods(Federal Tax Id)</a>
+		
     </div>
 
     <section class="contact-section">
