@@ -323,6 +323,18 @@ footer {
     margin: 0;
     line-height: 1.6;
 }
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjusts the space between images */
+    flex-wrap: wrap; /* Allows images to wrap to the next line if necessary */
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 auto; /* Allows images to grow and shrink as needed */
+}
 
 		
     </style>
@@ -410,10 +422,11 @@ footer {
 
 
 			<h3>מתנות שנשלחו ליולדת</h3>
-            <div style="text-align: center; margin-right: 20px";>
-                <img src="baloon.jpg" alt="בלון ליולדת"style="margin-left: 20px;" controls>
-				<img src="pinuk.jpg" alt="ערכה מפנקת ליולדת" style="margin-right: 1px;" controls>
-			</div>
+				<div class="image-container">
+					<img src="baloon.jpg" alt="בלון ליולדת" class="responsive-image">
+					<img src="pinuk.jpg" alt="ערכה מפנקת ליולדת" class="responsive-image">
+				</div>
+
   <section class="story">
     <h2 class="section-title">אלמנה יקרה כתבה לנו כך:</h2>
     <blockquote class="user-story">
