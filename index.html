@@ -148,12 +148,26 @@ ul li::before {
     transition: transform 0.3s ease, background 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
+.donation-container a img {
+    width: 30px; /* מגדיל את גודל האייקון */
+    height: auto; /* שומר על פרופורציות האייקון */
+    vertical-align: middle; /* מיישר את האייקון עם הטקסט */
+    margin-left: 10px; /* מוסיף ריווח בין הטקסט לאייקון */
+}
 .donation-container {
-    display: flex;
-    justify-content: center; /* Centers buttons horizontally */
-    align-items: center; /* Aligns buttons vertically */
-    gap: 20px; /* Equal spacing between buttons */
+    text-align: center; /* מרכז את כל הכפתורים */
+}
+.donation-container a {
+    display: block; /* הופך כל כפתור לבלוק כך שיתפוס שורה שלמה */
+    margin: 10px auto; /* מוסיף ריווח בין הכפתורים */
+    text-decoration: none; /* מסיר קו תחתון מהכפתורים */
+    padding: 10px 20px; /* מוסיף ריווח פנימי לכפתורים */
+    border-radius: 10px; /* הופך את הפינות לעגולות */
+    font-size: 16px; /* גודל טקסט אחיד */
+    width: 80%; /* קובע רוחב אחיד לכל הכפתורים */
+    max-width: 400px; /* מגביל את הרוחב המקסימלי */
+	font-size: 18px; /* מגדיל את גודל הטקסט */
+    font-weight: bold; /* מדגיש את הטקסט */
 }
 
 .button-container {
@@ -661,10 +675,9 @@ photo-caption {
             title.textContent = 'ידידי שלמה - תמיכה באלמנות צה"ל';
         }
     }
-	        document.addEventListener("DOMContentLoaded", function () {
-            const currentURL = window.location.href;
-
-            if (currentURL.endsWith("/en")) {
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlPath = window.location.pathname;
+            if (urlPath.endsWith('/en')) {
                 switchLanguage('en');
             } else {
                 switchLanguage('he');
