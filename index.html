@@ -661,6 +661,15 @@ photo-caption {
             title.textContent = 'ידידי שלמה - תמיכה באלמנות צה"ל';
         }
     }
+	        document.addEventListener("DOMContentLoaded", function () {
+            const currentURL = window.location.href;
+
+            if (currentURL.endsWith("/en")) {
+                switchLanguage('en');
+            } else {
+                switchLanguage('he');
+            }
+        });
 </script>
 </body>
 </html>
