@@ -111,19 +111,42 @@ ul li::before {
     white-space: nowrap; /* Prevent text from wrapping */
 }
 
-.donate-btn:hover, .donation-button:hover {
+.donate-btn:hover {
     background: #ff3d30;
     transform: scale(1.05);
 }
+.donation-button:hover {
+    background: #0056b3; 
+	    transform: scale(1.05);
+
+
+}
 
 .donation-button {
-    background-color: #0025c2; /* Background color for donation-button */
+    background-color: #0025c2;
 }
 
 .donation-button img {
     width: 20px; /* Adjust size for better fit */
     height: 20px;
     margin: 0 8px; /* Reduce spacing between text and image */
+}
+
+.donate-btn, .donation-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px; /* Set same width for all buttons */
+    height: 50px; /* Set same height for all buttons */
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .donation-container {
@@ -133,6 +156,13 @@ ul li::before {
     gap: 20px; /* Equal spacing between buttons */
 }
 
+.button-container {
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column (one per row) */
+    align-items: center; /* Center-align buttons */
+    gap: 15px; /* Add spacing between buttons */
+    margin-top: 20px;
+}
 footer {
     background: #004085;
     color: white;
@@ -158,26 +188,12 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .donate-btn, .donation-button {
-        font-size: 14px; /* Reduce font size on smaller screens */
-        padding: 8px 12px; /* Smaller padding for compact design */
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
     }
 }
 
-.social-media {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.social-media a {
-    margin: 0 10px;
-}
-
-.social-media img {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
 
 @keyframes slideIn {
     from {
