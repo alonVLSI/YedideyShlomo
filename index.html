@@ -91,24 +91,24 @@ ul li::before {
 }
 
 .donate-btn, .donation-button {
-    display: inline-flex; /* Ensures text and icon stay on the same line */
-    align-items: center; 
-    justify-content: center; 
-    width: auto; /* Allow the width to adjust dynamically */
-    max-width: 100%; /* Prevents the button from being too wide on small screens */
-    height: auto; /* Allow height to adjust as well */
-    margin: 20px auto;
-    padding: 10px 15px; /* Adjusted padding for smaller screens */
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-    color: white;
-    background: #ff6f61;
+    display: inline-flex; /* Use flexbox to align content */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    text-align: center; /* Ensure text is centered */
+    width: 250px; /* Set button width */
+    height: 50px; /* Set button height */
+    padding: 10px; /* Add some padding */
+    font-size: 16px; /* Ensure text is legible */
+    font-weight: bold; /* Make text bold */
+    color: white; /* Text color */
+    background-color: #ff6f61; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 30px; /* Rounded corners */
+    text-decoration: none; /* Remove underline for links */
     transition: transform 0.3s ease, background 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    white-space: nowrap; /* Prevent text from wrapping */
+    overflow-wrap: break-word; /* Handle long words gracefully */
+    white-space: normal; /* Allow text to wrap onto the next line */
 }
 
 .donate-btn:hover {
@@ -603,7 +603,7 @@ photo-caption {
             Pay with
             <img src="Paybox-Icon.png" alt="PayBox Icon">
         </a>
-        <a href="https://yedidei-shlomo.com/" class="donate-btn" target="_blank">Donate through other methods</a>
+        <a href="https://yedidei-shlomo.com/" class="donate-btn" target="_blank">Donate through other methods(Federal Tax Id)</a>
     </div>
 
     <section class="contact-section">
