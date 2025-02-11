@@ -4,22 +4,62 @@
     <meta charset="UTF-8">
    <meta name="google-site-verification" content="BcaMx5dllWr32WkFdYRdFSZy2gVaC8wTOu73JuP0g7U" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="ידידי שלמה מסייעת לאלמנות צהל בתחומים שבהם המדינה לא תומכת. הצטרפו אלינו ותמכו במשפחות גיבורינו.">
     <meta name="description" content="Yedidei Shlomo provides emotional, social, financial, and practical support to widows of IDF soldiers. Join us in supporting their journey.">
     <meta name="keywords" content="Yedidei Shlomo, IDF widows, charity, donations, support, Israel, emotional support, financial aid">
 	<meta name="keywords" content="ידידי שלמה,עזרה אלמנות צהל,תמיכה באלמנות">
+	<link rel="alternate" hreflang="he" href="https://yedidey-shlomo.netlify.app/" />
+	<link rel="alternate" hreflang="en" href="https://yedidey-shlomo.netlify.app/en" />
 
     <title>ידידי שלמה - תמיכה באלמנות צה"ל</title>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-body {
-    font-family: 'Assistant', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background: linear-gradient(to bottom, #ffffff, #f1f1f1);
-    overflow-x: hidden;
-}
+        body {
+            font-family: 'Assistant', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+            overflow-x: hidden;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .quote {
+            background: linear-gradient(to right, #f7d794, #f3a683);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            color: #333;
+            font-style: italic;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .quote.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+        img {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        img.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
 
 .header {
     display: flex;
@@ -388,7 +428,7 @@ photo-caption {
     </style>
 </head>
 <body>
-<header class="header">
+<header class="header fade-in">
     <h1 id="title">ידידי שלמה</h1>
     <div class="flag-container">
         <img src="israel-flag.png" alt="עברית - Hebrew Language" onclick="switchLanguage('he')" title="עברית">
@@ -397,33 +437,33 @@ photo-caption {
 </header>
 
 <!-- Content in Hebrew -->
-<section id="he-content">
+<section id="he-content" class="fade-in">
     <h2>מי אנחנו?</h2>
-    <p>
+    <p class="fade-in">
         ידידי שלמה היא עמותה רחבת לב המוקדשת למתן תמיכה רגשית, חברתית, פיננסית ומעשית לאלמנות חללי צה"ל. 
         מטרתנו לעמוד לצד נשים אלו, להציע סיוע במקומות שבהם אחרים לא יכולים, ולהבטיח שהן לא תרגשנה לבד במסען.
     </p>
 
     <h2>המטרה שלנו</h2>
-    <p>
+    <p class="fade-in">
         כשחייל צה"ל נופל במלחמה, קורבן זה לרוב משאיר אחריו אלמנה—ולעיתים גם ילדים קטנים. לאלמנות בהריון, הצער הבלתי נתפס מתלווה לאתגר המתוק-מר של קבלת חיים חדשים תוך כדי אבל על האובדן.
     </p>
-    <p>
+    <p class="fade-in">
         כל סיפור של אלמנה הוא ייחודי, וכך גם הצרכים שלהן. בין אם מדובר בתמיכה רגשית, סיוע פיננסי או תמיכה מעשית, ידידי שלמה מציעה עזרה מותאמת אישית על מנת להעניק תקווה, כוח ויוקרה בשעות הקשות ביותר שלהן.
     </p>
 
     <h2>ההישגים שלנו בשנת 2024</h2>
-    <p>
+    <p class="fade-in">
         מאז פרוץ מלחמת חרבות ברזל, עמותת ידידי שלמה הרחיבה משמעותית את השפעתה ותחום פעולתה. 
         מה שהחל כמאמץ צנוע לסייע לכמה אלמנות, הפך לקהילה של יותר מ-100 נשים המקבלות טיפול ותמיכה מותאמת אישית.
     </p>
     <h3>הישגים בולטים לשנה זו:</h3>
     <ul>
-        <li>הפצת כרטיסי מתנה לחגים, תוך מתן תחושת שמחה ונחמה בעונות החג.</li>
-        <li>הענקת מתנות לאלמנות שילדו תינוקות.</li>
-        <li>הפצת מתנות יום הולדת לאלמנות ולילדיהן, כדי להזכיר להן שהן מוערכות.</li>
-        <li>ארגון רשת מתנדבים לסיוע בבייביסיטר, משימות בית ועוד.</li>
-        <li>יום פינוק וריפוי בספא "אי החלומות" עבור 40 נשים. האירוע כלל טיפולים מרגיעים, חוויות קולינריות ושעה של רוגע והפוגה מאתגרים יומיים.</li>
+        <li class="fade-in">הפצת כרטיסי מתנה לחגים, תוך מתן תחושת שמחה ונחמה בעונות החג.</li>
+        <li class="fade-in">הענקת מתנות לאלמנות שילדו תינוקות.</li>
+        <li class="fade-in">הפצת מתנות יום הולדת לאלמנות ולילדיהן, כדי להזכיר להן שהן מוערכות.</li>
+        <li class="fade-in">ארגון רשת מתנדבים לסיוע בבייביסיטר, משימות בית ועוד.</li>
+        <li class="fade-in">יום פינוק וריפוי בספא "אי החלומות" עבור 40 נשים. האירוע כלל טיפולים מרגיעים, חוויות קולינריות ושעה של רוגע והפוגה מאתגרים יומיים.</li>
     </ul>
                 <h2>סיפורים מהלב - אלמנות מספרות</h2>
 				    <p>
@@ -486,8 +526,7 @@ photo-caption {
 					<img src="birthday7.jpg" alt="מתנת יום הולדת לאלמנה" class="responsive-image">
 					
 				</div>
-
-  <section class="story">
+  <section id="he-content" class="story">
     <h2 class="section-title">אלמנה יקרה כתבה לנו כך:</h2>
     <blockquote class="user-story">
         <p>היי טליה, ב-7.10 בעלי נפל כשהייתי בחודש שישי להריון ראשון, ביום ההולדת שלי.  
@@ -542,32 +581,32 @@ photo-caption {
 </section>
 
 <!-- Content in English -->
-<section id="en-content" class="hidden">
+<section id="en-content" class="hidden fade-in">
     <h2>Who We Are</h2>
-    <p>
+    <p class="fade-in">
         Yedidei Shlomo is a compassionate organization dedicated to providing emotional, social, financial, and practical support to widows of IDF soldiers. 
         Our mission is to stand beside these brave women, offering assistance where others cannot, and ensuring they never feel alone in their journey.
     </p>
 
     <h2>Our Purpose</h2>
-    <p>
+    <p class="fade-in">
         When an IDF soldier falls in battle, their sacrifice often leaves behind a grieving spouse—and in many cases, young children as well. For pregnant widows, this unimaginable pain is accompanied by the bittersweet challenge of welcoming new life while mourning the loss of a loved one.
     </p>
-    <p>
+    <p class="fade-in">
         Each widow’s story is unique, and so are their needs. Whether it’s emotional encouragement, financial aid, or practical support, Yedidei Shlomo tailors its assistance to offer hope, strength, and dignity during their most difficult times.
     </p>
 
     <h2>Our Achievements in 2024</h2>
-    <p>
+    <p class="fade-in">
         Since the onset of the Iron Sword War, Yedidei Shlomo has expanded its reach and impact exponentially. What began as a humble effort to assist a few widows has grown into a community of over 100 women receiving personalized care and support.
     </p>
     <h3>Highlights of this year's initiatives:</h3>
     <ul>
-        <li>Distributed gift cards to dozens of widows, offering them a sense of joy and relief during festive seasons.</li>
-        <li>Sent special gifts to widows who welcomed new babies into the world.</li>
-        <li>Delivered thoughtful birthday presents to widows and their children, reminding them they are cherished.</li>
-        <li>Coordinated a network of volunteers to assist with babysitting, household tasks, and other practical needs.</li>
-        <li>Organized an unforgettable day of relaxation at the prestigious "Dream Island" spa for 40 widows, including rejuvenating treatments, gourmet experiences, and a well-deserved escape from daily struggles.</li>
+        <li class="fade-in">Distributed gift cards to dozens of widows, offering them a sense of joy and relief during festive seasons.</li>
+        <li class="fade-in">Sent special gifts to widows who welcomed new babies into the world.</li>
+        <li class="fade-in">Delivered thoughtful birthday presents to widows and their children, reminding them they are cherished.</li>
+        <li class="fade-in">Coordinated a network of volunteers to assist with babysitting, household tasks, and other practical needs.</li>
+        <li class="fade-in">Organized an unforgettable day of relaxation at the prestigious "Dream Island" spa for 40 widows, including rejuvenating treatments, gourmet experiences, and a well-deserved escape from daily struggles.</li>
     </ul>
     
         <h2>Stories from the Heart - Widows Speak</h2>
@@ -708,6 +747,17 @@ photo-caption {
                 switchLanguage('he');
             }
         });
+	document.addEventListener("DOMContentLoaded", function() {
+        const elements = document.querySelectorAll(".fade-in, .quote, img");
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, { threshold: 0.1 });
+        elements.forEach(el => observer.observe(el));
+    });
 </script>
 </body>
 </html>
